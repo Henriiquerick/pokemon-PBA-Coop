@@ -1,0 +1,11 @@
+# Diagnóstico e validação da correção v4
+
+Nos logs enviados pelo usuário havia quatro encontros. Em três lutas concluídas, os snapshots continuaram chegando sem lacunas acima de 224 ms após o primeiro nocaute. O anfitrião recebeu comandos do convidado e registrou golpes do Pokémon dele depois desse nocaute. No quarto encontro, o log do convidado termina durante a luta; o anfitrião registra desconexão mais tarde. Isso não identifica, por si só, uma causa de rede ou hardware.
+
+A causa confirmada para o adversário fora de alcance estava em `Combatant._arena()`: a função incluía jogadores e o inimigo principal, mas excluía `Battle.extra_foes`. Assim, o segundo inimigo podia atravessar a borda enquanto os jogadores eram limitados. A v4 inclui `extra_foes` somente na sessão LAN e amplia a arena dos treinadores de Route 2. Os logs anteriores também imprimiam/gravavam posições e snapshots aproximadamente 40 vezes por segundo em cada PC. A v4 mantém a transmissão de estado a 20 Hz e reduz apenas a escrita de diagnóstico.
+
+O convidado agora recebe texto de desafio e a animação de barras do HUD original na preparação, e o efeito de início ao entrar na luta. O texto do anfitrião também é atualizado no começo de cada encontro. Uma captura renderizada da v4 mostrou ambos os inimigos dentro da área marcada; uma captura isolada não comprova todas as posições durante a luta.
+
+Testes locais em duas instâncias do executável Godot 4.7.1, com dados isolados, no PCK final: vitória normal (`win`), quatro adversários com reposição da segunda vaga (`slot1`), golpes e movimento sintéticos do gamepad do convidado (`pad`), desconexão do convidado (`drop_guest`). O validador conferiu HP amostrado, dano de ambos, volta ao mapa e restauração do estado. A inicialização curta passou sem erro de script. Um ensaio visível produziu captura da arena; o validador antigo exigia cinco registros de presença e foi ajustado para a nova frequência de log.
+
+Pendente: confirmar a melhora de quadros, introdução e limitação dos inimigos nos dois PCs reais, com o controle físico e Radmin. A internet do convidado pode ainda introduzir latência; os logs atuais não provam que ela causou o travamento percebido. O vídeo fornecido não foi decodificado neste ambiente; o diagnóstico usa os logs e as imagens anexadas.

@@ -1,0 +1,7 @@
+# Diagnóstico e testes da v5
+
+No teste com o amigo, os logs de host e guest coincidem até o snapshot 330 do segundo encontro. Rattata cai entre os snapshots 310 e 320. Depois disso o host continua registrando comandos e golpes do convidado, mas **não envia mais snapshots**. O código exigia que os quatro objetos estivessem válidos antes de replicar o estado; o objeto do Rattata era liberado após o nocaute. A mesma condição impedia detectar a derrota depois que um aliado era liberado.
+
+A v5 transmite um marcador de vaga vazia para o combatente removido, mantendo snapshots dos três restantes. A verificação de derrota usa somente aliados vivos. No teste local após a correção, 13 snapshots foram enviados e aplicados depois do primeiro nocaute; houve vitória e retorno ao mapa. Um teste separado de derrota confirmou resultado `lost` em ambas as instâncias, retorno ao mapa, controles liberados e estado de save restaurado. O teste foi feito com duas instâncias reais do executável Godot 4.7.1 e APPDATA separados. Logs em `campaign_patch/logs/freeze_fix`.
+
+O log do host especificado como `PBA-Coop-Duplas-Fix/logs/host.log` não estava presente nesta pasta no momento da inspeção. Foram analisados `guest.log`, `guest_amigo.log.txt` e `host teste com amigo.log`. O teste local secundário no `guest.log` concluiu três encontros e não mostrou erro de script. Não há teste Radmin da v5 nem gamepad físico nesta máquina; essas validações dependem dos dois PCs do usuário.

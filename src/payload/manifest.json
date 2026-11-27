@@ -1,0 +1,19 @@
+{
+  "payload/front_end.gdc": "05a302bce6d8f7b13ff27bcc70744b38dc9a1fc2268168d548f52d0b2a374c18",
+  "payload/campaign.gdc": "55fa7b30ec4feb33a495776dd1bbd3386f36c4d68dc9483866a35083eceb8ab9",
+  "payload/trainer.gdc": "3c4da9a3dd96bcb13054199810417d66df2160ca7ce55c4ffd509623c35011a4",
+  "payload/battle.gdc": "300b6a9aa8ca4bc968e0a9506bfcf3e396b469bdb71fb4dfc557a7de789b7716",
+  "payload/combatant.gdc": "a5ca0e199db83d3ede3a26ac334bcf89032b7fe6ad627ad524cbb635e23263f8",
+  "payload/encounters.gdc": "ede559bd13360ba4c73c0e31231743fa145e58347d1ce668379cc5db95df8f04",
+  "payload/save_game.gdc": "dffe6f483bebcd2b18724590e91df868dc3f793c23ef34a67a99d7bf491c665a",
+  "payload/arena.gdc": "720d115797c454f66b3454049df23bb28893e3f37bed8bcaf3572b5c0206b1fd",
+  "src/arena.gd": "d22f6e7132e433e432e181585573228bacaba9d381bba29de68fe4184f49142a",
+  "src/battle.gd": "48841fb81699df44677005ed7aff5fb6030cabb71448c288a044be64a331d416",
+  "src/campaign.gd": "b317812b5d72c6b2f4a13ef73ee1dc95c9ebb24ff60ecd9a1540bd70053bee65",
+  "src/combatant.gd": "23cadb6b88bf3ca5987e97eaadc9646a76237d5d66505f40b68e64c00d54dfe7",
+  "src/encounters.gd": "8b8ef630e85a2a014d0736999112f23fd2d4f11fe6f31ec00a6cc603ff58f309",
+  "src/front_end.gd": "69ba587cf1b98038b56fe3f9bd42d650d848164753c3ac6de80e8a1b4e0cb435",
+  "src/save_game.gd": "0ef27ca52bb2573b7f666ba6f469317b29f396140a382c38b551f662f6c05640",
+  "src/trainer.gd": "38b09349bf7d7fc7c2f24a83c4045c97392623eac5e11368f52cc5b82009ef82",
+  "src/arena.tscn": "e87408398af7ddbb0d3e67b465fbd88f97cd8c0a37e51803191789be3892e677"
+}

@@ -18,6 +18,29 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\coop_community\Instala
 ```
 
 Use uma pasta gravável, como Downloads. Não instale por cima de uma versão anterior. Cada PC migra seus próprios saves; não copie o perfil de um jogador para o outro.
+## Como instalar:
+1 - Baixar o winrar em 'Releases' dê preferencia para a última versão disponível
+
+2- Extraia o arquivo na pasta com o jogo e seus componentes. Ex:
+discord_game.sdk.dll
+PokemonBattleAdvanced.exe
+PokemonBattleAdvanced.exe
+
+3- Abrir a pasta 'coop_comunity' após extrai-lá
+
+4- Dentro da pasta 'coop_comunity' Executar o arquivo 'instalar.bat'. Este arquivo vai gerar uma outra pasta, chamada 'PBA-Coop-Comunidade-Alpha1'
+
+5- Abra a pasta gerada depois execute o arquivo 'Jogar-Coop.bat'.
+
+6- Garanta que você e seu amigo tenham RadminVPN para garantir a conexão via Lan, caso não tenham, é só realizar o download.
+
+7- Dentro do jogo, já na interface do PBA Coop, o host vai escolher a opção 'Hospedar', não é necessário colocar o IP ainda.
+
+8- O seu amigo deverá copiar o seu IP e Porta, que utiliza o padrão '24620'e então clicar em 'Entrar / Continuar como Guest'
+
+9- Divirta-se, e reporte feedbacks para termos a melhoria do mod!
+
+### Lembrando, este mod está em modelo experimental, recomendamos que não utilize seu save padrão, ou, que faça um Backup do mesmo para não perder seu progresso como solo player.
 
 ## Começar a jogar
 
@@ -30,7 +53,7 @@ Também há atalhos diretos. Dentro da pasta instalada:
 .\Hospedar.bat
 
 # PC convidado: substitua o número pelo IP real do anfitrião
-.\Entrar.bat -IP 26.123.45.67
+.\Entrar.bat -IP xx.xxx.xx.xx
 ```
 
 Para continuar o mesmo progresso sem conexão, use **Jogar-Sozinho.bat** ou “Continuar campanha localmente” no menu. Abrir o EXE diretamente entra no fluxo solo original, que possui um save separado.

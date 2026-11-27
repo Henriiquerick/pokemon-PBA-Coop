@@ -11,8 +11,6 @@ Primeira edição para um grupo pequeno testar. Base Windows **0.6.2a**, Godot 4
 
 São usados PowerShell e .NET já presentes no Windows. Não é preciso instalar Python, GDRETools ou o editor Godot. O patch não inclui o jogo completo. O instalador recusa uma build desconhecida, um PCK LAN como entrada e uma pasta de destino já existente.
 
-A exportação original permanece intacta. O novo diretório guarda um backup do PCK anterior com Thunder Stone no Mart de Viridian, floresta sem Haunter extra e Haunter → Gengar por troca. A migração procura, nessa ordem, `PBA-Coop-Battle-Fix`, `PBA-Coop-S03-Fix` e `PBA-Coop-S03`; copia perfis, backups, controles, configurações e journal de troca. Se um perfil estiver aberto, a instalação pede para fechá-lo.
-
 Para escolher caminhos explicitamente, no PowerShell:
 
 ```powershell

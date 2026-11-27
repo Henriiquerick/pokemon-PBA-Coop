@@ -1,0 +1,8 @@
+{
+  "version": "campaign-lan-v9-personal",
+  "game": "0.6.2a",
+  "engine": "4.7.1.stable.official.a13da4feb",
+  "protocol": "pba-campaign-lan-9-personal",
+  "pack_sha256": "b7acda081a2d01fb5109ceb5096e78781e03ad61a36e3343fbba8f749aa2c017",
+  "two_pc_v9_pending": true
+}

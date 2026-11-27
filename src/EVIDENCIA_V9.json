@@ -1,0 +1,8 @@
+{
+  "wild_solo_local": true,
+  "host_return_connected": true,
+  "guest_remained_in_world": true,
+  "personal_save_smoke": true,
+  "two_distinct_save_connection": true,
+  "no_pokemon_gate": true
+}
